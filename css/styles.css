@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 * {
     margin: 0px;
     padding: 0px;
 }
+body {
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #62DA97;
+    color: #007633;
+}
+
 a {
     font-weight: bold;
     color: #007633;
@@ -18,32 +25,11 @@ a:hover {
     font-size: 18px;
     opacity: 0.5;
 }
-.btn {
-    background: #007633;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    font-size: 14px;
-    letter-spacing: 3px;
-    border-radius: 15px;
-    transition: all .2s;
+h2 {
+    /*padding: 15px 20px;*/
+    margin-bottom: 10px;
 }
-.btn:hover {
-    background: #007633;
-    color: white;
-    border: none;
-    font-size: 14px;
-    letter-spacing: 3px;
-    border-radius: 15px;
-    opacity: 0.5;
-}
-body {
-    font-family: "Roboto Thin", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    background: #62DA97;
-    color: #007633;
-}
+
 .container {
     max-width: 650px;
     margin: auto;
@@ -60,8 +46,6 @@ body {
         text-align: center;
     }
 }
-
-
 .avatar {
     width: 200px;
     border-radius: 50px;
@@ -74,11 +58,6 @@ body {
     font-weight: bold;
     color: #22884F;
 }
-h2 {
-    /*padding: 15px 20px;*/
-    margin-bottom: 10px;
-}
-
 .card1, .card2 {
     border: 2px solid #060;
     border-radius: 5px;
@@ -89,14 +68,14 @@ h2 {
 .card1 {
     background-color: rgba(255,255,255,50%);
 }
-.card2 {
-    background-color: rgba(255,255,255,75%);
-}
 .list {
     padding: 0px 20px;
 }
 .list li {
     margin-bottom: 5px;
+}
+.card2 {
+    background-color: rgba(255,255,255,75%);
 }
 .table {
     width: 100%;
@@ -111,6 +90,7 @@ h2 {
 .table td {
     background: rgba(225,225,225,50%);
 }
+
 .form h2 {
     text-align: center;
 }
@@ -149,4 +129,23 @@ h2 {
 }
 .form-row .form-group:last-child{
     margin-right: 0px;
+}
+.btn {
+    background: #007633;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    transition: all .2s;
+}
+.btn:hover {
+    background: #007633;
+    color: white;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    opacity: 0.5;
 }
