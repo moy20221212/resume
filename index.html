@@ -6,67 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="cv, resume, potfolio, резюме, портфолио">
     <meta name="description" content="Это сайт моего резюме с портфолио.">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Моё резюме</title>
 </head>
 <body>
-<img src="image\foto.jpg" width="200" alt="Петрович">
-<h1>Петрович</h1>
-<p>Я программист-дальнобойщик</p>
-<p>Люблю <strong>программки программировать</strong> и <em>далеко на машине ездить</em></p>
+    <div class="container">
+        <div class="info">
+            <img src="image\foto.jpg" alt="Петрович" class="avatar">
+            <div class="info-text">
+                <h1>Петрович</h1>
+                <p>Я программист-дальнобойщик</p>
+                <p>Люблю <strong>программки программировать</strong> и <em>далеко на машинке ездить</em></p>
 
-<h4>Список социальных сетей</h4>
-<a href="https://vk.com/" target="_blank">ВК</a>
-|
-<a href="https://ok.ru" target="_blank">ОК</a>
+                <h2>Список социальных сетей</h2>
+                <a href="https://vk.com/" target="_blank">ВК</a>
+                |
+                <a href="https://ok.ru" target="_blank">ОК</a>
+            </div>
+        </div>
 
-<h2>Мои хобби</h2>
+        <div class="card">
+            <div class="card1">
+                <h2>Мои хобби</h2>
 
-<ol>
-    <li>программки программировать</li>
-    <li>далеко на машине ездить</li>
-</ol>
+                <ol class="list">
+                    <li>программки программировать</li>
+                    <li>далеко на машинке ездить</li>
+                </ol>
+            </div>
 
-<h2>Опыт работы</h2>
+            <div class="card2">
+                <h2>Опыт работы</h2>
 
-<table>
-    <thead>
-    <th>Название</th>
-    <th>Должность</th>
-    <th>Год</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>ЧП Фасоль</td>
-        <td>Фронтенд</td>
-        <td>2000 - 2010</td>
-    </tr>
-    <tr>
-        <td>ЧП Балалайка</td>
-        <td>Бэкенд</td>
-        <td>2010 - Сейчас</td>
-    </tr>
-    </tbody>
-</table>
+                <table class="table">
+                    <thead>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ЧП Фасоль</td>
+                        <td>Фронтенд</td>
+                        <td>2000 - 2010</td>
+                    </tr>
+                    <tr>
+                        <td>ЧП Балалайка</td>
+                        <td>Бэкенд</td>
+                        <td>2010 - Сейчас</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-<form>
-    <div>
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите имя">
+        <form class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mesage">Ваше сообщение</label>
+                <textarea id="mesage" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Отправить" class="btn">
+            </div>
+
+        </form>
     </div>
-    <div>
-        <label for="email">Ваш email</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-    <div>
-        <label for="mesage">Ваше сообщение</label>
-        <br>
-        <textarea id="mesage" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-    <div>
-        <input type="submit" value="Отправить">
-    </div>
-
-</form>
-
 </body>
 </html>
